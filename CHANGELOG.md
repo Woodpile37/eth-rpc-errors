@@ -88,7 +88,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Renamed affected interfaces
 - `ethErrors`
   - Added missing
-  [EIP-1474 errors](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1474.md)
+    [EIP-1474 errors](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1474.md)
     - Added corresponding codes and messages
   - **Namespacing**
     - EIP-1474 (which includes JSON RPC 2.0) errors now namespaced under `ethErrors.rpc`
@@ -96,7 +96,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - EIP-1193 errors now namespaced under `ethErrors.provider`
       - Formerly under `errors.eth`
   - Most error getters now take a single, *optional* `opts` argument, which
-  is either a string or an object
+    is either a string or an object
     - If a string, it becomes the error message
     - If an object, it should have the form: `{ message?: string, data?: any }`
     - **Special Cases**
@@ -111,8 +111,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `serializeError`
   - If the object passed to the function has a `.message` property,
-  it will preferred over the `.message` property of the fallback error when
-  creating the returned serialized error object
+    it will preferred over the `.message` property of the fallback error when
+    creating the returned serialized error object
 
 [Unreleased]:https://github.com/MetaMask/eth-rpc-errors/compare/v4.0.2...HEAD
 [4.0.2]:https://github.com/MetaMask/eth-rpc-errors/compare/v4.0.1...v4.0.2
@@ -123,3 +123,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [2.1.0]:https://github.com/MetaMask/eth-rpc-errors/compare/v2.0.2...v2.1.0
 [2.0.2]:https://github.com/MetaMask/eth-rpc-errors/compare/v2.0.1...v2.0.2
 [2.0.1]:https://github.com/MetaMask/eth-rpc-errors/compare/v2.0.0...v2.0.1
+
